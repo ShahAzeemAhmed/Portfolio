@@ -19,6 +19,8 @@
   --body-color: #FAFAFF;
   --body-font: 'Quicksand', sans-serif;
   --normal-font-size: 1rem;
+  font-family: 'Evangelina', sans-serif;
+                                                
 }
 
 *,::before,::after{
