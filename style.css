@@ -414,7 +414,7 @@ img{
 }
 
 .h1 {
-    font-size: 80px;
+    font-size: 70px;
     line-height: 1.2;
 }
 
@@ -791,7 +791,7 @@ img{
 .hero .price {
     color: var(--black);
     font-family: var(--ff-Evangelina);
-    font-size: 80px;
+    font-size: 38px;
     font-weight: var(--fw-600);
     margin-block-end: 20px;
 }
