@@ -1315,7 +1315,7 @@ img{
    * HERO
    */
     .hero-card {
-        padding-inline: 70px;
+        padding-inline: 20px;
     }
     .hero-text {
         max-width: 30ch;
