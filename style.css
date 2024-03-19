@@ -274,7 +274,7 @@ body{
 *::after {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 
 li {
@@ -402,7 +402,7 @@ img{
 }
 
 .h1 {
-    font-size: 122px;
+    font-size: 100px;
     line-height: 1.2;
 }
 
@@ -601,7 +601,7 @@ img{
 
 .header {
     position: relative;
-    padding-block-end: 80px;
+    padding-block-end: 1px;
 }
 
 .alert {
@@ -779,7 +779,7 @@ img{
 .hero .price {
     color: var(--black);
     font-family: var(--ff-Evangelina);
-    font-size: 122px;
+    font-size: 100px;
     font-weight: var(--fw-600);
     margin-block-end: 20px;
 }
@@ -1270,6 +1270,61 @@ img{
  * responsive for larger than 575px screen
  */
 
+ 
+
+ @media (min-width: 300px) {
+    /**
+   * REUSED STYLE
+   */
+    .container {
+        max-width: 300px;
+        width: 100%;
+        margin-inline: auto;
+    }
+     :is(.header, .hero) .container {
+        max-width: unset;
+    }
+    .has-scrollbar {
+        gap: 30px;
+    }
+    .scrollbar-item {
+        min-width: calc(50% - 15px);
+    }
+    /**
+   * HEADER
+   */
+    .alert {
+        padding-block: 8px;
+    }
+    .header-top .container {
+        padding-inline: 30px;
+    }
+    /**
+   * HERO
+   */
+    .hero-card {
+        padding-inline: 70px;
+    }
+    .hero-text {
+        max-width: 30ch;
+    }
+    /**
+   * BANNER
+   */
+    .banner-card .card-text {
+        max-width: 30ch;
+    }
+    /**
+   * OFFER
+   */
+    .offer .countdown {
+        --fs-2: 4.8rem;
+    }
+    .offer .countdown .time:not(:last-child)::after {
+        margin-inline: 20px;
+    }
+}
+
 @media (min-width: 575px) {
     /**
    * REUSED STYLE
@@ -1400,7 +1455,7 @@ img{
         /**
      * spacing
      */
-        --section-padding: 50px;
+        --section-padding: 23px;
     }
     /**
    * REUSED STYLE
@@ -1420,6 +1475,9 @@ img{
     .collection-list {
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
+    }
+    .collection-list-skill{
+        grid-template-columns:repeat(1,1fr);
     }
     /**
    * BANNER
