@@ -374,7 +374,10 @@ body {
 .container {`
     padding-inline: 15px;
 }
- 
+.img{
+    width: 
+    max-width:
+}
     
 @media all and(max-width:480px) {
    img{
