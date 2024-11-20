@@ -1,5 +1,10 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200..1000&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+@font-face {
+  font-family:'Kunstler Script';
+  src: url('/assets/font/KUNSTLER.TTF') format('truetype');
+}
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -15,7 +20,7 @@
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: "Nunito Sans", system-ui;
+  --body-font: "Nunito Sans", system-ui, GB Garamond , KUNSTLER , Kunstler Script;
   --normal-font-size: .938rem;
   --smaller-font-size: .75rem;
   --tiny-font-size: .75rem;
@@ -23,6 +28,7 @@
   /*========== Font weight ==========*/
   --font-regular: 400;
   --font-semi-bold: 600;
+  
 
   /*========== z index ==========*/
   --z-tooltip: 10;
@@ -74,7 +80,7 @@ body.dark-theme {
   --body-color: hsl(228, 24%, 16%);
   --shadow-color: hsla(228, 80%, 4%, .3);
 }
-
+ 
 /*========== 
 	Color changes in some parts of 
 	the website, in dark theme
@@ -124,7 +130,193 @@ body.dark-theme {
   align-items: center;
   column-gap: .25rem;
 }
+/* Notes section kotlin-------------------------------------------------------------------------------------*/
+ 
 
+ /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container */
+.Kotlin-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Chapter Header */
+.Kotlin-chapter-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Garamond', serif;
+    margin-top: 20px;
+    position: relative;
+}
+
+.Kotlin-chapter-icon {
+  width: 88px;
+  height: auto;
+  margin-right: 2px;
+  position: absolute;
+  left: calc(50% - 90px);
+  transform: translateX(-50%);
+  top: -35px;
+}
+
+.Kotlin-chapter-title {
+    font-size: 2rem;
+}
+
+/* Subtitle */
+.Kotlin-subtitle {
+    text-align: center;
+    font-family: 'Pinyon Script', cursive;
+    font-size: 1.8rem;
+    margin-top: 5px;
+}
+
+/* Main Title */
+.Kotlin-main-title {
+    text-align: center;
+    font-family: 'Garamond', serif;
+    font-size: 1.6rem;
+    margin-top: 15px;
+}
+
+/* Paragraph Content */
+.Kotlin-content {
+    font-family: 'Garamond', serif;
+    font-size: 1rem;
+    margin-top: 20px;
+    line-height: 1.6;
+    position: relative;
+}
+
+/* Styling for Paragraph with Icon */
+.Kotlin-paragraph {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 15px;
+    text-align: justify;
+}
+
+.Kotlin-paragraph-icon {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    margin-top: 5px; /* Adjust to align with the start of text */
+    flex-shrink: 0;
+}
+
+.Kotlin-paragraph p {
+    flex: 1;
+    text-align: justify;
+}
+
+/* Responsive Design */
+@media (max-width: 1080px) {
+    .Kotlin-chapter-icon {
+        left: 38%; /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 720px) {
+    .Kotlin-chapter-title {
+        font-size: 1.6rem;
+    }
+    .Kotlin-subtitle {
+        font-size: 1.5rem;
+    }
+    .Kotlin-main-title {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .Kotlin-chapter-icon {
+        width: 82px;
+        left: calc(50% - 75px);
+    }
+    .Kotlin-paragraph-icon {
+        width: 40px;
+        margin-right: 8px;
+    }
+}
+
+@media (max-width: 320px) {
+    .Kotlin-chapter-title {
+        font-size: 1.4rem;
+    }
+    .Kotlin-subtitle {
+        font-size: 1.2rem;
+    }
+    .Kotlin-main-title {
+        font-size: 1.2rem;
+    }
+    .Kotlin-paragraph-icon {
+        width: 30px;
+        margin-right: 5px;
+        margin-top: 3px;
+    }
+}
+
+
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.para-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.para-title {
+  font-style: italic;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.para-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.para-text-container {
+  max-width: 60%;
+}
+
+.para-subtitle {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.para-text {
+  font-size: 1em;
+}
+
+.para-image {
+  width: 150px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+ 
+/* Kotlin Section Styling----------------------------------------------------------------------------------*/
+
+ 
 .header__logo i {
   font-size: 1.5rem;
   color: var(--first-color);

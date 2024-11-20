@@ -1,118 +1,261 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
 
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
 
-      <title>Software Engineer</title>
-   </head>
-   <body>
-      <header class="header" id="header">
-         <div class="header__container">
-            <a href="#" class="header__logo">
-               <i class="ri-cloud-fill"></i>
-               <span>Developer</span>
-            </a>
-            
-            <button class="header__toggle" id="header-toggle">
-               <i class="ri-menu-line"></i>
+   <title>Software Engineer</title>
+   <style>
+      .content-section {
+         display: none;
+      }
+      .active-section {
+         display: block;
+      }
+   </style>
+</head>
+<body>
+   <header class="header" id="header">
+      <div class="header__container">
+         <button onclick="showSection('theme')">
+            <i class="ri-moon-clear-fill sidebar__link sidebar__theme" id="theme-button">
+               <span>Theme</span>
+            </i>
+         </button>
+         
+        
+         <button class="header__toggle" id="header-toggle">
+            <i class="ri-menu-line"></i>
+         </button>
+      </div>
+   </header> 
+
+   <nav class="sidebar" id="sidebar">
+      <div class="sidebar__container">
+         <div class="sidebar__user">
+            <div class="sidebar__img">
+               <img src="assets/img/AndroidStudio.png" alt="image">
+            </div>
+            <div class="sidebar__info">
+               <h3>Software Engineer</h3>
+               <span>Android Developer</span>
+            </div>
+         </div>
+
+         <div class="sidebar__content">
+            <div>
+               <h3 class="sidebar__title">Notes📗</h3>
+
+               <div class="sidebar__list">
+                  <a href="#" class="sidebar__link active-link" onclick="showSection('dashboard')">
+                     <i class="ri-pie-chart-2-fill"></i>
+                     <span>Dashboard</span>
+                  </a>
+                  <a href="#" class="sidebar__link" onclick="showSection('kotlin')">
+                     <i class="ri-wallet-3-fill"></i>
+                     <span>Kotlin Programming Language</span>
+                  </a>
+                  <a href="#" class="sidebar__link" onclick="showSection('jetpack')">
+                     <i class="ri-calendar-fill"></i>
+                     <span>Jetpack Compose</span>
+                  </a>
+                  <a href="#" class="sidebar__link" onclick="showSection('data-structures')">
+                     <i class="ri-bar-chart-box-fill"></i>
+                     <span>Data Structures & Algorithms</span>
+                  </a>
+                  <a href="#" class="sidebar__link" onclick="showSection('ktor')">
+                     <i class="ri-arrow-up-down-line"></i>
+                     <span>Ktor</span>
+                  </a>
+               </div>
+            </div>
+
+            <div>
+               <h3 class="sidebar__title">DEVELOPER</h3>
+
+               <div class="sidebar__list">
+                  <a href="#" class="sidebar__link" onclick="showSection('frontend')">
+                     <i class="ri-mail-unread-fill"></i>
+                     <span>Front-end</span>
+                  </a>
+                  <a href="#" class="sidebar__link" onclick="showSection('backend')">
+                     <i class="ri-settings-3-fill"></i>
+                     <span>Back-end</span>
+                  </a>
+                  <a href="#" class="sidebar__link" onclick="showSection('design')">
+                     <i class="ri-notification-2-fill"></i>
+                     <span>Design</span>
+                  </a>
+               </div>
+            </div>
+         </div>
+
+         <div class="sidebar__actions">
+             
+            <button class="sidebar__link">
+               <i class="ri-logout-box-r-fill"></i>
+               <span>Coming Soon</span>
             </button>
          </div>
-      </header> 
-      <nav class="sidebar" id="sidebar">
-         <div class="sidebar__container">
-            <div class="sidebar__user">
-               <div class="sidebar__img">
-                  <img src="assets/img/AndroidStudio.png" alt="image">
-               </div>
-   
-               <div class="sidebar__info">
-                  <h3>Software Engineer</h3>
-                  <span>Android Developer</span>
-               </div>
+      </div>
+   </nav>
+
+   <!--=============== MAIN ===============-->
+   <main class="main container" id="main">
+      <section id="dashboard" class="content-section active-section">
+         <h2>Dashboard</h2>
+         <p>Welcome to the dashboard!</p>
+      </section>
+
+
+
+      <section id="kotlin" class="content-section">   
+          
+            
+         <div class="Kotlin-container">
+            <div class="Kotlin-chapter-header">
+                <img src="assets/img/custom.png" alt="Chapter Icon" class="Kotlin-chapter-icon">
+                <h1 class="Kotlin-chapter-title">CHAPTER</h1>
             </div>
-
-            <div class="sidebar__content">
-               <div>
-                  <h3 class="sidebar__title">Notes📗</h3>
-
-                  <div class="sidebar__list">
-                     <a href="#" class="sidebar__link active-link">
-                        <i class="ri-pie-chart-2-fill"></i>
-                        <span>Dashboard</span>
-                     </a>
-                     
-                     <a href="#" class="sidebar__link">
-                        <i class="ri-wallet-3-fill"></i>
-                        <span>Kotlin Programming Language</span>
-                     </a>
-
-                     <a href="#" class="sidebar__link">
-                        <i class="ri-calendar-fill"></i>
-                        <span>Jetpack Compose</span>
-                     </a>
-
-                     <a href="#" class="sidebar__link">
-                        <i class="ri-bar-chart-box-fill"></i>
-                        <span>Data Structures & Algorithms</span>
-                     </a>
-
-                     <a href="#" class="sidebar__link">
-                        <i class="ri-arrow-up-down-line"></i>
-                        <span>Ktor</span>
-                     </a>
-                  </div>
+            <h2 class="Kotlin-subtitle">One</h2>
+            <h3 class="Kotlin-main-title">Why Kotlin is useful?</h3>
+            <div class="Kotlin-content">
+                <div class="Kotlin-paragraph">
+                    <img src="assets/img/CustomStart.png" alt="Paragraph Icon" class="Kotlin-paragraph-icon">
+                    <p>
+                        Kotlin is a modern, but already mature, open-source, statically typed programming language designed to make developers happier. It’s designed to be concise, safe, and interoperable with Java. Kotlin definitions refer to the way Kotlin code is structured, including the syntax and conventions used to declare variables, functions, classes, and other language constructs.
+                    </p>
+                </div>
+                <p class="Kotlin-paragraph">
+                    <em>The name is derived from Kotlin Island, a Russian island in the Gulf of Finland, near St. Petersburg. Andrey Breslav, Kotlin’s former lead designer, mentioned that the team decided to name it after an island, just like the programming language Java was named after the Indonesian island of Java...</em>
+                </p>
+                <p class="Kotlin-paragraph">
+                  Kotlin is a cross-platform, statically typed, general-purpose high-level programming language with type inference. 
+                  Kotlin is designed to interoperate fully with Java, and the JVM version of Kotlin’s standard library depends on the Java Class Library, but type inference allows its syntax to be more concise.  
+                  
+                  Conceived in late 2010, it was first released in February, 2016, 
+                  and has since steadily become increasingly popular and promising a tool in many development areas, be it an:
+                   Android development, desktop applications, iOS, Linux or server-side solutions.
+                  The company which stands behind the language and has been investing into its development ever since is  JetBrains, famous for its excellent software engineering tools, such as IntelliJ IDEA.
+                  
+                </p>
+                <img src="assets/img/GoogleAnnouncement.png" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                
+                <h1>Kotlin Multiplatform</h1>
+                <p>Kotlin is a multiplatform and multiparadigm programming language emphasizing safety, conciseness and interoperability.</p>
+                <br>
+                <p>Share code on your terms</p>
+                <p>Reuse Kotlin code across Android, iOS, web, desktop, and server-side while keeping native code if needed. Open-source technology by JetBrains for flexible multiplatform development</p>
+                <br>
+                <p><i>Kotlin Multiplatform</i> is a technology that allows you to create applications for various platforms and efficiently reuse code across them while retaining the benefits of native programming. Your multiplatform applications will work on different operating systems, such as iOS, Android, macOS, Windows, Linux, and others.</p>
+            <br>
+                <img src="assets/img/kotlin Kmp.png"  style="display: block; margin: 0 auto ;max-width:50%; height: auto;">
+            <br>
+                <h1>Share code without compromising quality
+            </h1>   
+            <p>Shared Kotlin code compiles into platform binaries, integrating seamlessly into any project. Along with language features that allow you to utilize platform-specific APIs, there’s no longer a need to decide between native and cross-platform development. You can have the best of both worlds at the same time!
+            </p>
+            <br>
+            <img src="assets/img/Kotlin.png">
+            <div class="para-container">
+               <h2 class="para-title">Suitable for all kinds of projects</h2>
+           
+               <div class="para-section">
+                   <div class="para-text-container">
+                       <h3 class="para-subtitle">Share a piece of logic</h3>
+                       <p class="para-text">
+                           Improve your app’s stability by sharing an isolated and critical part of the app.
+                           Reuse the Kotlin code you already have to keep the applications in sync.
+                       </p>
+                   </div>
+                   <img src="assets/img/one.png" alt="Share a piece of logic" class="para-image">
+               </div>
+           
+               <div class="para-section">
+                   <div class="para-text-container">
+                       <h3 class="para-subtitle">Share logic and keep the UI native</h3>
+                       <p class="para-text">
+                           Use Kotlin Multiplatform when you start a new project, and implement data handling and business logic just once.
+                           Keep the UI native to meet the most stringent requirements.
+                       </p>
+                   </div>
+                   <img src="assets/img/two.png" alt="Share logic and keep the UI native" class="para-image">
+               </div>
+           
+               <div class="para-section">
+                   <div class="para-text-container">
+                       <h3 class="para-subtitle">Share up to 100% of the code</h3>
+                       <p class="para-text">
+                           Elevate development efficiency and share up to 100% of your code with Compose Multiplatform – a modern declarative framework by JetBrains for sharing UI across multiple platforms.
+                       </p>
+                   </div>
+                   <img src="assets/img/three.png" alt="Share up to 100% of the code" class="para-image">
                </div>
 
-               <div>
-                  <h3 class="sidebar__title">DEVELOPER</h3>
 
-                  <div class="sidebar__list">
-                     <a href="#" class="sidebar__link">
-                        <i class="ri-mail-unread-fill"></i>
-                        <span>Front-end</span>
-                     </a>
 
-                     <a href="#" class="sidebar__link">
-                        <i class="ri-settings-3-fill"></i>
-                        <span>Back-end</span>
-                     </a>
 
-                     <a href="#" class="sidebar__link">
-                        <i class="ri-notification-2-fill"></i>
-                        <span>Design</span>
-                     </a>
-                  </div>
                </div>
-            </div>
+        </div>
+             
+               
+        
+      </section>
 
-            <div class="sidebar__actions">
-               <button>
-                  <i class="ri-moon-clear-fill sidebar__link sidebar__theme" id="theme-button">
-                     <span>Theme</span>
-                  </i>
-               </button>
 
-               <button class="sidebar__link">
-                  <i class="ri-logout-box-r-fill"></i>
-                  <span>Coming Soon</span>
-               </button>
-            </div>
-         </div>
-      </nav>
 
-      <!--=============== MAIN ===============-->
-      <main class="main container" id="main">
-         <h1>COMING SOON...</h1>
-      </main>
+      <section id="jetpack" class="content-section">
+         <h2>Jetpack Compose</h2>
+         <p>Content about Jetpack Compose goes here...</p>
+      </section>
+      <section id="data-structures" class="content-section">
+         <h2>Data Structures & Algorithms</h2>
+         <p>Content about Data Structures & Algorithms goes here...</p>
+      </section>
+      <section id="ktor" class="content-section">
+         <h2>Ktor</h2>
+         <p>Content about Ktor goes here...</p>
+      </section>
+      <section id="frontend" class="content-section">
+         <h2>Front-end</h2>
+         <p>Content about Front-end goes here...</p>
+      </section>
+      <section id="backend" class="content-section">
+         <h2>Back-end</h2>
+         <p>Content about Back-end goes here...</p>
+      </section>
+      <section id="design" class="content-section">
+         <h2>Design</h2>
+         <p>Content about Design goes here...</p>
+      </section>
+      <section id="theme" class="content-section">
+         <h2>Theme</h2>
+         <p>Content about Theme goes here...</p>
+      </section>
+   </main>
+
+   <!-- JavaScript to handle section toggling -->
+   <script>
+      function showSection(sectionId) {
+         // Hide all sections
+         document.querySelectorAll('.content-section').forEach(section => {
+            section.classList.remove('active-section');
+         });
+         // Show the selected section
+         document.getElementById(sectionId).classList.add('active-section');
+      }
+   </script>
       
-      <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
-   </body>
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
+</body>
 </html>
