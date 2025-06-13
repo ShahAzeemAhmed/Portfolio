@@ -1012,7 +1012,7 @@ body {
 
 .offer-banner {
     display: grid;
-    grid-template-columns: 0.7fr 1fr;
+    grid-template-columns: 0.5fr 1fr;
     align-items: center;
     gap: 30px;
     margin-block-end: 60px;
@@ -1065,6 +1065,79 @@ body {
     align-items: center;
 }
 
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #111;
+}
+
+.case-study {
+  padding: 80px 20px;
+}
+
+.dark-bg {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+.light-bg {
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.text-side {
+  flex: 1 1 45%;
+}
+
+.text-side h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+.figma-button {
+  display: inline-block;
+  background-color: #0acf83; /* Figma green */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Outfit', sans-serif;
+  transition: background 0.3s;
+}
+
+.figma-button:hover {
+  background-color: #0abc76;
+}
+
+.text-side p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.image-side {
+  flex: 1 1 16%;
+  text-align: center;
+}
+
+.image-side img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 /*-----------------------------------*\
   #box
@@ -1085,6 +1158,43 @@ body {
     text-align: center;
     margin-block-end: 40px;
 }
+/* Your main layout */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* Make columns side by side on desktop */
+.text-side, .image-side {
+  flex: 1 1 48%;
+}
+
+/* Responsive layout: stack content vertically on small screens */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-side, .image-side {
+    flex: 1 1 100%;
+  }
+
+  .image-side img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .figma-button {
+    display: inline-block;
+    margin-top: 20px;
+  }
+}
+
 
 .blog-card .card-banner img {
     transition: var(--transition-2);
@@ -1440,7 +1550,7 @@ body {
    * OFFER
    */
     .offer .section-text {
-        max-width: 45ch;
+        max-width: 59ch;
     }
     /**
    * FOOTER
@@ -1498,6 +1608,7 @@ body {
     .collection-list-skill{
         grid-template-columns:repeat(1,1fr);
     }
+    
     /**
    * BANNER
    */
@@ -1736,6 +1847,6 @@ body {
    * OFFER
    */
     .offer .container {
-        gap: 120px;
+        gap: 50px;
     }
 }

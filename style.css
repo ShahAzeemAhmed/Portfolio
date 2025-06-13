@@ -1440,7 +1440,7 @@ body {
    * OFFER
    */
     .offer .section-text {
-        max-width: 45ch;
+        max-width: 59ch;
     }
     /**
    * FOOTER
@@ -1498,6 +1498,7 @@ body {
     .collection-list-skill{
         grid-template-columns:repeat(1,1fr);
     }
+    
     /**
    * BANNER
    */
@@ -1736,6 +1737,6 @@ body {
    * OFFER
    */
     .offer .container {
-        gap: 120px;
+        gap: 50px;
     }
 }

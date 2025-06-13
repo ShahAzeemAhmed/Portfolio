@@ -1,3 +1,4 @@
+
 // FILTER JS
 $(document).ready(function() {
     $('.filter-item').click(function() {
