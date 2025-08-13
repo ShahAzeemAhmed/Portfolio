@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #fff;
+            color: #000;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: #555;
+            margin-top: 0;
+            text-align: left;
+        }
+
+        .image-container {
+            margin: 20px auto;
+            max-width: 1000px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            max-height: 90vh;
+            object-fit: contain;
+            border: 1px solid #aaa;
+            background-color: #dcdcdc;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.3rem;
+            }
+            p {
+                font-size: 0.85rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.1rem;
+            }
+            p {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading - about this project or anything you want</h1>
+    <p>sub heading will be here this is sample for you</p>
+
+    <div class="image-container">
+        <img src="\blog\assets\images\Gone.jpg" alt="Project Image">
+    </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+/*-----------------------------------*\
+  #CASE STUDY SECTION STYLES
+\*-----------------------------------*/
+
+.case-study {
+  padding: 80px 20px;
+}
+
+.light-bg {
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+.dark-bg {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    padding: 0px 15px;
+  }
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.text-side, .image-side {
+  flex: 1 1 48%;
+}
+
+.text-side h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.text-side p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.figma-button {
+  display: inline-block;
+  background-color: #0acf83;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Outfit', sans-serif;
+  transition: background 0.3s;
+}
+
+.figma-button:hover {
+  background-color: #0abc76;
+}
+
+.image-side {
+  flex: 1 1 16%;
+  text-align: center;
+}
+
+.image-side img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .text-side, .image-side {
+    flex: 1 1 100%;
+  }
+  .image-side img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+  .figma-button {
+    display: inline-block;
+    margin-top: 20px;
+  }
+} 

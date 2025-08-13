@@ -1,0 +1,284 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo span {
+  color: gold;
+}
+.top-banner {
+  width: 100%;
+  overflow: hidden;
+}
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding:0.4rem 0;
+  border-bottom: 1px solid #eee;
+}
+/* Slider container */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 1.5rem 0;
+  cursor: pointer;
+}
+
+/* Slides wrapper */
+.slides-wrapper {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Dot navigation */
+.dots {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  pointer-events: none;
+}
+.dots span {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.85); /* slightly stronger white */
+  border-radius: 50%;
+  display: inline-block;
+  transition: background 0.3s ease;
+  pointer-events: all;
+  cursor: pointer;
+
+  /* Add a smooth shadow for visibility */
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
+}
+
+.dots span.active {
+  background: white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.9);
+}
+
+.dots span {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background 0.3s ease;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.dots span.active {
+  background: white;
+}
+s
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.logo .cursive {
+  font-family: 'Pacifico', cursive;
+  font-weight: normal;
+}
+
+.navbar nav a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
+
+.top-banner {
+  width: 100%;
+  overflow: hidden;
+}
+
+.top-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 500px;
+}
+
+.blog-container {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.blog-image img,
+.post-image {
+  width: 100%;
+  border-radius: 10px;
+  margin: 1.5rem 0;
+}
+
+.blog-post h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.date {
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.blog-post p {
+  margin-bottom: 1.5rem;
+}
+
+.top-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 500px;
+}
+
+.navbar nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
+
+.blog-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.slider {
+  position: relative;
+  max-width: 100%;
+  margin: 1.5rem 0;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+.slider {
+  position: relative;
+  width: 100%;
+  height: auto; /* Fixed height image slider if u need*/ 
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 1.5rem 0;
+}
+
+.slides-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+}
+
+.slides-wrapper img {
+  width: 100%;
+  height: 100%;         /* Ensure full container height */
+  object-fit: cover;    /* Crop/scale image to fill */
+  flex-shrink: 0;
+}
+
+.slider-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.slider-buttons button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.blog-image img,
+.post-image {
+  width: 100%;
+  border-radius: 10px;
+  margin: 1.5rem 0;
+}
+
+.blog-post h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.date {
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.blog-post p {
+  margin-bottom: 1.5rem;
+}
